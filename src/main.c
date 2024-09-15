@@ -2,8 +2,9 @@
 
 int main(int argc, char** argv)
 {
-    int suma = sum(2,2);
-    show(suma);
+    int result = sum_integers(2,2);
+    
+    show_result(result);
 
     return 0;
 }
