@@ -2,12 +2,50 @@
 
 This project is a simple example of how to use Makefiles to manage the build process for a C program. It includes basic functionality and demonstrates how to compile and link source files into an executable binary.
 
-You do not need an IDE to work with this project; you can manage and build it using the command line. However, if you prefer using an IDE, we recommend [Visual Studio Code (VSCode)](https://code.visualstudio.com/) for its robust support for C programming and its integration with build tools like Make.
+You do not need an IDE to work with this project; you can manage and build it using the command line. However, if you prefer using an IDE, I recommend [Visual Studio Code (VSCode)](https://code.visualstudio.com/) for its robust support for C programming and its integration with build tools like Make.
 
 ## Requirements
 
 * **Compiler**: GCC (GNU Compiler Collection)
 * **Make**: GNU Make
+
+### How to Check if You Have These Tools
+
+Before installing GCC and Make, you may want to check if they are already installed on your system. Here’s how you can verify their presence:
+
+#### macOS and Linux
+
+1. **Check GCC**:
+    Open a terminal and run:
+    ```sh
+    gcc --version
+    ```
+    If GCC is installed, you’ll see version information. If not, you'll receive a command not found message.
+
+2. **Check Make**:
+    In the terminal, run:
+    ```sh
+    make --version
+    ```
+    If Make is installed, you’ll see version information. If not, you'll receive a command not found message.
+
+#### Windows
+
+1. **Check GCC**:
+    Open Command Prompt or PowerShell and run:
+    ```sh
+    gcc --version
+    ```
+    If GCC is installed, you’ll see version information. If not, you'll receive a command not recognized message.
+
+2. **Check Make**:
+    In Command Prompt or PowerShell, run:
+    ```sh
+    make --version
+    ```
+    If Make is installed, you’ll see version information. If not, you'll receive a command not recognized message.
+
+If either of these tools is not installed, follow the installation instructions provided in the [Installation Instructions](#installation-instructions) section to get them set up on your system.
 
 ### Installation Instructions
 
@@ -67,11 +105,11 @@ On most Linux distributions, you can install GCC and Make using your distributio
     sudo pacman -S base-devel
     ```
 
-### Project Structure
+## Project Structure
 
 ![Project Structure](docs/project_strucure.png)
 
-### Compilation
+## Compilation
 
 To compile the project, navigate to the root directory of the project and run:
 
@@ -85,18 +123,19 @@ If you only want to remove the object files and keep the binary, use:
 
     make clean
 
-#### Execution
+### Execution
 
 After compilation, you can run the binary with:
 
     ./main
 
-#### Notes
+## Notes
 
 * Ensure you have 'gcc' and 'make' installed on your system.
-* This project usese a simple Makefile with basic rules. For more complex projects, you may need additional configurations.
+* This project uses a simple Makefile with basic rules. For more complex projects, you may need additional configurations.
+* Please go to docs/MAKEFILE.md to get more information abaout Make, it is very useful in order to understand how ***make*** works.
 
-#### Additional
+### Additional
 
 This project serves as a basic template to get you started. I encourage you to expand and customize it according to your needs and interests. Feel free to:
 
