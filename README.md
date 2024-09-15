@@ -2,7 +2,7 @@
 
 This project is a simple example of how to use Makefiles to manage the build process for a C program. It includes basic functionality and demonstrates how to compile and link source files into an executable binary.
 
-You do not need an IDE to work with this project; you can manage and build it using the command line. However, if you prefer using an IDE, I recommend [Visual Studio Code (VSCode)](https://code.visualstudio.com/) for its robust support for C programming and its integration with build tools like Make.
+You do not need an IDE to work with this project; you can manage and build it using the command line. However, if you prefer using a code editor, I recommend Visual Studio Code (VSCode) for its robust support for C programming and its integration with build tools like Make.
 
 ## Requirements
 
