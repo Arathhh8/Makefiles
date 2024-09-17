@@ -17,32 +17,32 @@ Before installing GCC and Make, you may want to check if they are already instal
 
 1. **Check GCC**:
     Open a terminal and run:
-    ```sh
+
     gcc --version
-    ```
+
     If GCC is installed, you’ll see version information. If not, you'll receive a command not found message.
 
 2. **Check Make**:
     In the terminal, run:
-    ```sh
+
     make --version
-    ```
+
     If Make is installed, you’ll see version information. If not, you'll receive a command not found message.
 
 #### Windows
 
 1. **Check GCC**:
     Open Command Prompt or PowerShell and run:
-    ```sh
+
     gcc --version
-    ```
+
     If GCC is installed, you’ll see version information. If not, you'll receive a command not recognized message.
 
 2. **Check Make**:
     In Command Prompt or PowerShell, run:
-    ```sh
+
     make --version
-    ```
+
     If Make is installed, you’ll see version information. If not, you'll receive a command not recognized message.
 
 If either of these tools is not installed, follow the installation instructions provided in the [Installation Instructions](#installation-instructions) section to get them set up on your system.
@@ -54,56 +54,50 @@ If either of these tools is not installed, follow the installation instructions 
 To install GCC and Make on macOS, you can use [Homebrew](https://brew.sh/), a package manager for macOS. If you don't have Homebrew installed, follow these steps:
 
 1. **Install Homebrew** (if not already installed):
-    ```sh
+
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-    ```
 
 2. **Install GCC and Make**:
-    ```sh
+
     brew install gcc
     brew install make
-    ```
 
 #### Windows
 
 To install GCC and Make on Windows, you can use [MinGW](https://www.mingw-w64.org/) (Minimalist GNU for Windows) or [MSYS2](https://www.msys2.org/).
 
 1. **Install MSYS2**:
-    - Download the installer from [MSYS2](https://www.msys2.org/) and follow the instructions on the website.
-    - Open the MSYS2 terminal and update the system:
-      ```sh
+    -Download the installer from [MSYS2](https://www.msys2.org/) and follow the instructions on the website.
+    -Open the MSYS2 terminal and update the system:
+
       pacman -Syu
-      ```
 
 2. **Install GCC and Make**:
-    ```sh
+
     pacman -S mingw-w64-x86_64-gcc
     pacman -S make
-    ```
 
    Alternatively, if you use MinGW:
-    - Download and install the [MinGW Installation Manager](http://mingw.org/wiki/Getting_Started).
-    - Open the MinGW Installation Manager and select `mingw32-gcc-g++` and `mingw32-make` to install.
+    -Download and install the [MinGW Installation Manager](http://mingw.org/wiki/Getting_Started).
+    -Open the MinGW Installation Manager and select `mingw32-gcc-g++` and `mingw32-make` to install.
 
 #### Linux
 
 On most Linux distributions, you can install GCC and Make using your distribution's package manager.
 
-- **Debian/Ubuntu**:
-    ```sh
+-**Debian/Ubuntu**:
+
     sudo apt update
     sudo apt install build-essential
     ```
 
-- **Fedora**:
-    ```sh
-    sudo dnf install gcc gcc-c++ make
-    ```
+-**Fedora**:
 
-- **Arch Linux**:
-    ```sh
+    sudo dnf install gcc gcc-c++ make
+
+-**Arch Linux**:
+
     sudo pacman -S base-devel
-    ```
 
 ## Project Structure
 
@@ -139,13 +133,13 @@ After compilation, you can run the binary with:
 
 This project serves as a basic template to get you started. I encourage you to expand and customize it according to your needs and interests. Feel free to:
 
-- **Add More Functionality**: Implement additional features that you think could enhance the project. This could include new algorithms, additional modules, or any other improvements.
+-**Add More Functionality**: Implement additional features that you think could enhance the project. This could include new algorithms, additional modules, or any other improvements.
   
-- **Create New `.c` and `.h` Files**: As you develop new features, you may find it useful to add more source (`.c`) and header (`.h`) files. Make sure to organize them appropriately within the `src/` and `inc/` directories.
+-**Create New `.c` and `.h` Files**: As you develop new features, you may find it useful to add more source (`.c`) and header (`.h`) files. Make sure to organize them appropriately within the `src/` and `inc/` directories.
 
-- **Update the Makefile**: If you add new source or header files, remember to update the Makefile to include these changes. This ensures that the build process incorporates your new files and configurations.
+-**Update the Makefile**: If you add new source or header files, remember to update the Makefile to include these changes. This ensures that the build process incorporates your new files and configurations.
 
-- **Test Thoroughly**: As you make changes and add new features, it's important to test the project thoroughly. Ensure that your modifications work as expected and do not introduce new issues.
+-**Test Thoroughly**: As you make changes and add new features, it's important to test the project thoroughly. Ensure that your modifications work as expected and do not introduce new issues.
 
 This project is designed as a starting point, and there is plenty of room for enhancement. Whether you're looking to learn more about C programming, experiment with new ideas, or build something more complex, feel free to adjust and extend the project as you see fit.
 
