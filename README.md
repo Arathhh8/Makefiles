@@ -89,7 +89,6 @@ On most Linux distributions, you can install GCC and Make using your distributio
 
     sudo apt update
     sudo apt install build-essential
-    ```
 
 -**Fedora**:
 
@@ -101,11 +100,24 @@ On most Linux distributions, you can install GCC and Make using your distributio
 
 ## Project Structure
 
-![Project Structure](docs/project_strucure.png)
+    Makefiles/
+    |–– docs/
+    |   |–– MAKEFILE.md     # Check this for more Make Information 
+    |
+    |–– src/                # Source files  
+    |   |–– main.c
+    |   |–– output.c
+    |   |–– calculator.c
+    |
+    |–– inc/                # Header files
+    |   |–– functions.h
+    |
+    |–– Makefile
+    |–– README.md
 
 ## Compilation
 
-To compile the project, navigate to the root directory of the project and run:
+To compile the project, navigate to the root directory of the project (Makefiles folder) and run:
 
     make
 
@@ -117,11 +129,44 @@ If you only want to remove the object files and keep the binary, use:
 
     make clean
 
+## Project Structure after compilation
+
+    Makefiles/
+    |–– bin/
+    |   |–– main            # Executable file
+    |
+    |–– docs/
+    |   |–– MAKEFILE.md     # Check this for more Make Information 
+    |
+    |–– src/                # Source files  
+    |   |–– main.c
+    |   |–– main.o
+    |   |–– output.c
+    |   |–– output.o
+    |   |–– calculator.c
+    |   |–– calculator.o
+    |
+    |–– inc/                # Header files
+    |   |–– functions.h
+    |
+    |–– Makefile
+    |–– README.md
+
 ### Execution
 
 After compilation, you can run the binary with:
 
-    ./main
+    ./bin/main          # Linux or macOS
+
+    ./bin/main.exe      # Windows
+
+#### Output expected
+
+    Result: 4
+
+---
+
+    Congrats, it is working well!
 
 ## Notes
 
@@ -143,4 +188,12 @@ This project serves as a basic template to get you started. I encourage you to e
 
 This project is designed as a starting point, and there is plenty of room for enhancement. Whether you're looking to learn more about C programming, experiment with new ideas, or build something more complex, feel free to adjust and extend the project as you see fit.
 
-Happy coding!
+---
+
+For more info, visit: <https://www.gnu.org/software/make/manual/make.html>
+
+<center
+
+**Happy Coding!** 😊
+
+</center>
