@@ -121,11 +121,9 @@ To compile the project, navigate to the root directory of the project (Makefiles
 
     make
 
-This will generate the executable binary named 'main'. If you want to remove all generated files, including object files and the binary, you can run:
+This will generate the executable binary named 'main'.
 
-    make clean_all
-
-If you only want to remove the object files and keep the binary, use:
+To remove generated files, run:
 
     make clean
 
