@@ -121,7 +121,7 @@ To compile the project, navigate to the root directory of the project (Makefiles
 
     make
 
-This will generate the executable binary named 'main'.
+this will generate the executable binary named 'main'.
 
 To remove generated files, run:
 
