@@ -170,7 +170,7 @@ After compilation, you can run the binary with:
 
 * Ensure you have 'gcc' and 'make' installed on your system.
 * This project uses a simple Makefile with basic rules. For more complex projects, you may need additional configurations.
-* Please go to docs/MAKEFILE.md to get more information abaout Make, it is very useful in order to understand how ***make*** works.
+* Please go to docs/MAKEFILE.md to get more information about Make, it is very useful in order to understand how ***make*** works.
 
 ### Additional
 
