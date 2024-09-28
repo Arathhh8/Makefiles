@@ -113,7 +113,7 @@ On most Linux distributions, you can install GCC and Make using your distributio
     |   |–– functions.h
     |
     |–– Makefile
-    |–– README.md
+    |–– README.md           # This file
 
 ## Compilation
 
@@ -123,10 +123,6 @@ To compile the project, navigate to the root directory of the project (Makefiles
 
 this will generate the executable binary named 'main'.
 
-To remove generated files, run:
-
-    make clean
-
 ## Project Structure after compilation
 
     Makefiles/
@@ -134,21 +130,23 @@ To remove generated files, run:
     |   |–– main            # Executable file
     |
     |–– docs/
-    |   |–– MAKEFILE.md     # Check this for more Make Information 
-    |
-    |–– src/                # Source files  
-    |   |–– main.c
-    |   |–– main.o
-    |   |–– output.c
-    |   |–– output.o
-    |   |–– calculator.c
-    |   |–– calculator.o
+    |   |–– MAKEFILE.md     # Check this for more Make information 
     |
     |–– inc/                # Header files
     |   |–– functions.h
     |
+    |–– obj/                # Object files
+    |   |–– calculator.o
+    |   |–– main.o
+    |   |–– output.o
+    |
+    |–– src/                # Source files  
+    |   |–– calculator.c
+    |   |–– main.c
+    |   |–– output.c
+    |
     |–– Makefile
-    |–– README.md
+    |–– README.md           # This file
 
 ### Execution
 
@@ -158,6 +156,12 @@ After compilation, you can run the binary with:
 
     ./bin/main.exe      # Windows
 
+or
+
+you can run:
+
+    make run    # This is an automated way to simplify your workflow and another method to utilize Makefiles :D
+
 #### Output expected
 
     Result: 4
@@ -165,6 +169,10 @@ After compilation, you can run the binary with:
 ---
 
     Congrats, it is working well!
+
+To remove generated files, run:
+
+    make clean
 
 ## Notes
 
